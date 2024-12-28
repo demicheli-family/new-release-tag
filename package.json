@@ -1,0 +1,33 @@
+{
+  "name": "new-release-tag",
+  "version": "1.0.0",
+  "description": "Get new release tag",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsc",
+    "build": "ncc build src/index.ts --minify",
+    "test": "jest",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "github",
+    "actions",
+    "typescript",
+    "automation"
+  ],
+  "author": "Loris Demicheli",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "simple-git": "^3.27.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.10.1",
+    "@vercel/ncc": "^0.38.3",
+    "jest": "^29.7.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}

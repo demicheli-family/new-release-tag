@@ -1,0 +1,12 @@
+name: "new-release-tag"
+description: "Generate tag name from lastest tag."
+author: "Loris Demicheli"
+inputs:
+  tag_template:
+    description: "A tag for generate new release (Default 'yyyy.MM.dd-ii')"
+outputs:
+  new_tag:
+    description: "Value of new tag, for example 2024.12.28-01"
+runs:
+  using: "node16"
+  main: "dist/index.js"
